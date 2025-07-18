@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFrameworkCore.FirebirdSQL" Version="2.1.2.2" />
+    <PackageReference Include="FirebirdSql.Data.FirebirdClient" Version="10.3.3" />
+    <PackageReference Include="FirebirdSql.EntityFrameworkCore.Firebird" Version="12.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ICGSoftware.GetAppsettings\ICGSoftware.GetAppsettings.csproj" />
+  </ItemGroup>
+
+</Project>

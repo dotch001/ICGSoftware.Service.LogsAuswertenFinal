@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-ICGSoftware.Service.LogsAuswerten-f20d1b6a-5d19-4ff0-82eb-9a8c6f6b0162</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Identity" Version="1.14.2" />
+    <PackageReference Include="EntityFrameworkCore.FirebirdSQL" Version="2.1.2.2" />
+    <PackageReference Include="FirebirdSql.Data.FirebirdClient" Version="10.3.3" />
+    <PackageReference Include="FirebirdSql.EntityFrameworkCore.Firebird" Version="12.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="8.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Graph" Version="5.86.0" />
+    <PackageReference Include="Microsoft.Identity.Client" Version="4.74.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Serilog" Version="4.3.0" />
+    <PackageReference Include="Serilog.Extensions.Hosting" Version="9.0.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
+    <PackageReference Include="Serilog.Sinks.ILogger" Version="1.0.3" />
+    <PackageReference Include="System.Text.Json" Version="9.0.7" />
+    <PackageReference Include="System.Windows.Extensions" Version="9.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ICGSoftware.CountAndSortLogs\ICGSoftware.CountAndSortLogs.csproj" />
+    <ProjectReference Include="..\ICGSoftware.FilterErrorsAndAskAI\ICGSoftware.FilterErrorsAndAskAI.csproj" />
+    <ProjectReference Include="..\ICGSoftware.FirebirdHandeling\ICGSoftware.FirebirdHandeling.csproj" />
+    <ProjectReference Include="..\ICGSoftware.GetAppsettings\ICGSoftware.GetAppsettings.csproj" />
+    <ProjectReference Include="..\ICGSoftware.LogHandleing\ICGSoftware.LogHandleing.csproj" />
+    <ProjectReference Include="..\ICGSoftware.MSGraphEmailHandeling\ICGSoftware.MSGraphEmailHandeling.csproj" />
+  </ItemGroup>
+</Project>
