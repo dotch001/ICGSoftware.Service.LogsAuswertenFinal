@@ -9,8 +9,6 @@ namespace ICGSoftware.FirebirdHandeling
     {
         private readonly Logging _log = Logging;
 
-
-
         public async Task Process(string ouputFolderpath)
         {
             string errorsFolder = ouputFolderpath;
